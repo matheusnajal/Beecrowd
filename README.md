@@ -3,5 +3,4 @@
 Todas as minhas questões resolvidas na plataforma Beecrowd em diversas linguagens.
 
 ## Linguagens:
-- Javascript
 - Clojure
