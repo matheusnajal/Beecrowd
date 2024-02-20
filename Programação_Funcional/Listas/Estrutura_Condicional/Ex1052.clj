@@ -1,0 +1,16 @@
+(defn mes [a]
+  (cond 
+    (= a 1) (println "")
+    (= a 2) (println "")
+    (= a 3) (println "")
+    (= a 4) (println "April")
+    (= a 5) (println "")
+    (= a 6) (println "")
+    (= a 7) (println "")
+    (= a 8) (println "")
+    (= a 9) (println "")
+    (= a 10) (println "")
+    (= a 11) (println "")
+    (= a 12) (println "")
+    ))
+(mes (read))
