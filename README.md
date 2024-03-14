@@ -4,3 +4,8 @@ Todas as minhas questões resolvidas na plataforma Beecrowd em diversas linguage
 
 ## Linguagens:
 - Clojure
+- C
+- C++
+- JavaScript
+- Java
+- Python
