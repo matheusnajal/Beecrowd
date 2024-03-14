@@ -2,7 +2,7 @@ package Ex1001;
 
 import java.util.Scanner;
 
-public class Ex1001 {
+public class Main {
 
     Scanner sc = new Scanner(System.in);
 
@@ -13,7 +13,7 @@ public class Ex1001 {
         System.out.printf("SOMA = %d \n", (a+b));
     }
     public static void main(String[] args) {
-        Ex1001 m = new Ex1001();
+        Main m = new Main();
         m.main();
     }
 }
