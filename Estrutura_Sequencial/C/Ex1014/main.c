@@ -8,7 +8,7 @@ int main(){
     scanf("%d" "%f", &distancia, &combustivel);
 
     consumo = distancia / combustivel;
-    printf("%.3f km/l", consumo);
+    printf("%.3f km/l\n", consumo);
 
     return 0;
 }
