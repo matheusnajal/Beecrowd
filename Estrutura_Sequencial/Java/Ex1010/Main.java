@@ -10,7 +10,7 @@ public class Main {
         int A = sc.nextInt();
         int B = sc.nextInt();
         float C = sc.nextFloat();
-
+        
         int D = sc.nextInt();
         int E = sc.nextInt();
         float F = sc.nextFloat();
