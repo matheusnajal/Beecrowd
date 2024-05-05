@@ -1,25 +1,16 @@
-(def fib [1 1])
-(while (< (count fib) 38)
-  (def fib (conj fib (+ (nth fib 0) (nth fib 1)))))
+(defn fibo
+  ([len] (fibo (conj nil 1) len))
+  ([lista len]
+   (cond
+     (= len (count lista)) lista
+     (<= (count lista) 2) (recur (conj lista 1) len)
+     :else (recur (conj lista (+ (nth lista 0) (nth lista 1))) len))))
 
-(def calls [2 0])
-(while (< (count calls) 38)
-  (def calls (conj calls (+ (nth calls 0) (nth calls 1) 2))))
+(defn main []
+  (doall (map (fn [x]
+                (def b (int (read)))
+                (def f (fibo (+ b 1)))
+                (def call (int (- (* (- (reduce + f) (nth f 0)) 2) 2)))
+                (println (format "fib(%d) = %d calls = %d" b call (nth f 0)))) (range (read)))))
 
-(defn read-integer []
-  (Integer/parseInt (read-line)))
-
-(defn safe-nth [coll idx]
-  (if (and (>= idx 0) (< idx (count coll)))
-    (nth coll idx)
-    "Index out of bounds"))
-
-(defn -main []
-  (let [n (read-integer)]
-    (dotimes [i n]
-      (let [a (read-integer)
-            call-count (safe-nth calls (- a 1))
-            fib-value (safe-nth fib (- a 1))]
-        (println (str "fib(" a ") = " call-count " calls = " fib-value))))))
-
-(-main)
+(main)
